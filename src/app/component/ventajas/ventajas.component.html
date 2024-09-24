@@ -1,0 +1,11 @@
+<div class="ventajas-container">
+    <h2>Ventajas</h2>
+    <div class="ventajas-grid">
+      <div *ngFor="let ventaja of ventajas" class="ventaja-card">
+        <img [src]="ventaja.imagen" alt="{{ventaja.titulo}}">
+        <h3>{{ventaja.titulo}}</h3>
+        <p>{{ventaja.descripcion}}</p>
+      </div>
+    </div>
+  </div>
+  
