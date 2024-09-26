@@ -14,17 +14,17 @@
 .card {
   border: 1px solid #ddd;
   border-radius: 12px;
-  width: 25%; /* Hacer las cards más pequeñas */
+  width: 25%; 
   padding: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
 .card img {
-  width: 150px; /* Definir un ancho y alto fijos */
+  width: 150px; 
   height: 150px;
-  border-radius: 50%; /* Hacer la imagen circular */
-  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del círculo */
+  border-radius: 50%;
+  object-fit: cover; 
 }
 
 .card:hover {
