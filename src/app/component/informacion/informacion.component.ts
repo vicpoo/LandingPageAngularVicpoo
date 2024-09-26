@@ -1,16 +1,32 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+
+interface Faq {
+  question: string;
+  answer: string;
+  showAnswer: boolean;
+}
+
+interface Ventaja {
+  titulo: string;
+  descripcion: string;
+  imagen: string;
+}
+
 @Component({
-  selector: 'app-faq',
+  selector: 'app-informacion',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './faq.component.html',
-  styleUrl: './faq.component.css'
+  templateUrl: './informacion.component.html',
+  styleUrl: './informacion.component.css'
 })
-export class FaqComponent {
 
-  faqs = [
+
+
+export class InformacionComponent {
+
+  faqs: Faq[] = [
     {
       question: '¿Cuánto tiempo debo entrenar?',
       answer: 'Debes entrenar al menos 30 minutos al día.',
@@ -61,9 +77,43 @@ export class FaqComponent {
       answer: 'Consulta a un especialista y revisa tu plan de entrenamiento y dieta.',
       showAnswer: false
     }
+  
   ];
 
-  toggleAnswer(faq: any) {
+  ventajas: Ventaja[] = [
+    {
+      titulo: 'Mejora Física',
+      descripcion: 'Aumenta tu fuerza y resistencia con entrenamientos regulares.',
+      imagen: 'assets/MejoraFisica.jpg' 
+    },
+    {
+      titulo: 'Salud Mental',
+      descripcion: 'Reduce el estrés y mejora el estado de ánimo.',
+      imagen: 'assets/SaludMental.jpg'
+    },
+    {
+      titulo: 'Disciplina',
+      descripcion: 'Desarrolla hábitos saludables y consistentes.',
+      imagen: 'assets/Diciplina.jpg'
+    },
+    {
+      titulo: 'Variedad de ejercicios',
+      descripcion: 'Accede a equipos y rutinas personalizadas.',
+      imagen: 'assets/Variedad de ejercicios.webp'
+    },
+    {
+      titulo: 'Comunidad',
+      descripcion: 'Conéctate con personas que comparten tus objetivos.',
+      imagen: 'assets/ComunidadFitness.jpg'
+    },
+    {
+      titulo: 'Aumento de energía',
+      descripcion: 'Mejora tu resistencia y energía diaria a través del ejercicio regular.',
+      imagen: 'assets/AumentoEnergia.webp'
+    }
+  ];
+
+  toggleAnswer(faq: Faq) {
     faq.showAnswer = !faq.showAnswer;
   }
 

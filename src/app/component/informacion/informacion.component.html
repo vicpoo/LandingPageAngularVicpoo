@@ -1,0 +1,28 @@
+<div class="informacion-container">
+        <!-- Sección de Ventajas -->
+    <div class="ventajas-container">
+      <h3>Ventajas</h3>
+      <div class="ventajas-grid">
+        <div *ngFor="let ventaja of ventajas" class="ventaja-card">
+          <img [src]="ventaja.imagen" alt="{{ventaja.titulo}}">
+          <h3>{{ventaja.titulo}}</h3>
+          <p>{{ventaja.descripcion}}</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Sección de Preguntas Frecuentes -->
+    <div class="faq-container">
+      <h2>Preguntas Frecuentes</h2>
+      <div class="faq-grid">
+        <div *ngFor="let faq of faqs" class="faq-card">
+          <div class="faq-question">
+            <p>{{ faq.question }}</p>
+            <button (click)="toggleAnswer(faq)" aria-label="Show Answer">
+              <img src="assets/search-icon.png" alt="Buscar">
+            </button>
+          </div>
+          <p *ngIf="faq.showAnswer" class="faq-answer">{{ faq.answer }}</p>
+        </div>
+      </div>
+    </div>
