@@ -48,3 +48,15 @@
     max-width: 800px;
     margin: 0 auto;
 }
+
+h2 {
+    color: white;
+    font-size: 36px;
+      font-weight: bold;
+}
+
+p {
+    color: white;
+    font-size: 22px;
+      line-height: 1.6;
+}
