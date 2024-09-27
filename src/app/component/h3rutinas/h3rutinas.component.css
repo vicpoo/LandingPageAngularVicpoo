@@ -1,0 +1,62 @@
+.suplementos-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.header-section {
+    position: relative;
+    background-color: #000; 
+    height: 600px; 
+    color: white;
+}
+
+.header-image {
+    background-image: url('../../../../public/assets/Designer (3).jpeg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100%; 
+}
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.about-section {
+    background-color: #939393;
+    padding: 20px;
+}
+
+.about-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: white;
+    font-size: 36px;
+      font-weight: bold;
+}
+
+p {
+    color: white;
+    font-size: 22px;
+      line-height: 1.6;
+}
