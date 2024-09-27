@@ -29,7 +29,7 @@ export class TipsComponent {
     {
       title: 'Varía los ejercicios',
       description: 'Cambiar tus rutinas cada pocas semanas estimula el crecimiento y mantiene tu cuerpo en constante adaptación.',
-      image: ''
+      image: 'assets/Varía los ejercicios.jpg'
     },
     {
       title: 'Incluye descanso y recuperación',
@@ -39,7 +39,7 @@ export class TipsComponent {
     {
       title: 'Aumenta gradualmente la intensidad',
       description: 'Ya sea con más peso o más repeticiones, el progreso gradual es clave para mejorar el rendimiento sin forzar el cuerpo.',
-      image: 'assets/images/increase-intensity.jpg'
+      image: 'assets/Aumenta gradualmente la intensidad.jpg'
     }
   ];
 
